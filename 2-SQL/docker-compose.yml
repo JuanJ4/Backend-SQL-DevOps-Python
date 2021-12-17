@@ -1,23 +1,21 @@
 version: "3.8"
 services:
     pg:
-        container_name: pg_container
+        container_name: pg_container1
         image: postgres:13.2-alpine
         restart: always
         environment:
             POSTGRES_USER: postgres
-            POSTGRES_DB: week1
             POSTGRES_HOST_AUTH_METHOD: trust
             PGUSER: postgres
         ports:
-            - "5435:5435"
+            - "5434:5434"
         volumes:
-            - ./data:/data
-            - ./data/misc/init.sql:/docker-entrypoint-initdb.d/1-init.sql
-            - ./data/northwind/init.sql:/docker-entrypoint-initdb.d/2-init.sql
-            - ./data/moma/init.sql:/docker-entrypoint-initdb.d/3-init.sql
+            - "${PWD}/data/misc/init.sql:/docker-entrypoint-initdb.d/1-init.sql"
+            - "${PWD}/data/northwind/init.sql:/docker-entrypoint-initdb.d/2-init.sql"
+            - "${PWD}/data/moma/init.sql:/docker-entrypoint-initdb.d/3-init.sql"
     pgadmin:
-        container_name: pgadmin_container
+        container_name: pgadmin_container1
         image: dpage/pgadmin4:5.2
         restart: always
         environment:
@@ -28,7 +26,7 @@ services:
             PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
             PGADMIN_CONFIG_UPGRADE_CHECK_ENABLED: "False"
         ports:
-            - "5433:5433"
+            - "5400:5400"
         depends_on:
             - pg
 networks:

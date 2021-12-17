@@ -1,10 +1,16 @@
+DROP DATABASE IF EXISTS week1;
+CREATE DATABASE week1;
+
 DROP DATABASE IF EXISTS week2;
 CREATE DATABASE week2;
 
 DROP DATABASE IF EXISTS week3;
 CREATE DATABASE week3;
 
-\c week2
+DROP DATABASE IF EXISTS week4;
+CREATE DATABASE week4;
+
+\connect week2
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
