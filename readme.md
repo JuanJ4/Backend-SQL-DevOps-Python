@@ -1,5 +1,5 @@
 ## Python, Data Structures, and Algorithms 1/3​
-In this course, I learned programming with Python. This includes loops and functions, complex data structures, classes, and object-oriented programming concepts and most common algorithms.
+In this course, I learned programming with Python, loops and functions, complex data structures, classes, and object-oriented programming concepts and most common algorithms.
 
 - Week 1: Python
 - Week 2: For Loops and Functions
