@@ -1,0 +1,2 @@
+- Created a Django application and deploy it to Docker, then to Docker Compose.
+- used django-admin to scaffold out the starter Django application files, setting up the sub-applications, and using Django to perform migrations.
