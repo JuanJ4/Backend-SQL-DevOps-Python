@@ -1,4 +1,4 @@
-## Python, Data Structures, and Algorithms 1/3​
+## Python, Data Structures, Algorithms 1/3​
 Programming with Python, loops and functions, complex data structures, classes, and object-oriented programming concepts and most common algorithms.
 
 - Week 1: Python
