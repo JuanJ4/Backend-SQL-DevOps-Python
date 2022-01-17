@@ -3,7 +3,7 @@ Programming with Python, loops and functions, complex data structures, classes, 
 
 - Week 1: Python
 - Week 2: For Loops and Functions
-- Week 3: Introduction to Data Structures
+- Week 3: Data Structures
 - Week 4: Object-Oriented Programming and Data Structures
 - Week 5: All About Algorithms
 
